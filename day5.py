@@ -33,6 +33,21 @@ cols = file.readline() # gets first line of data
 data = file.readlines() # all 891 rows into a variable called "data"
 file.close()
 
+fo = open("index.html","w")
+fo.write("<html>"
+fo.write("<hl>Women and Children first?</hl>")
+fo.write("<p>Here are the results of my Titanic analysis.</p>")
+fo.write("<img src='titanic.jpg' width='700px'>")
+fo.write("<br>")
+fo.write("<h2>Study Conclusion</h2>")
+fo.write("<svg width='800' height='500'>")
+fo.write("<rect width='740' height='100' fill='#d9854a'></rect>")
+fo.write("<text x='25' y='25' fill='white'>Women</text>")
+fo.write("<rect y='100' width='590' height='100' fill='green'></rect>")
+fo.write("<rect y='200' width='190' height='100' fill='blue'></rect>")
+fo.write("</html>")
+fo.close()
+
 # create 'game loop' using while
 
 keepgoing = True
