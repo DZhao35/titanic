@@ -1,0 +1,151 @@
+<html> <!-- beginning of html -->
+
+    <style>
+
+        .women {
+            width:100px;
+            height: 100px;
+            fill: pink;
+            transition: width 2s;
+            rx: 15px;
+            
+        }
+
+        .women:hover {
+            width: 710px;
+            height: 100px;
+
+        }
+
+        .men {
+            width:100px;
+            height: 100px;
+            fill: #c8dde6;
+            transition: width 2s;
+            rx: 15px;
+            
+        }
+
+        .men:hover {
+            width: 260px;
+            height: 100px;
+
+        }
+
+        .child {
+            width:100px;
+            height: 100px;
+            fill: #d7c8e6;
+            transition: width 2s;
+            rx: 15px;
+            
+        }
+
+        .child:hover {
+            width: 610px;
+            height: 100px;
+
+        }
+
+        .logo {
+            opacity: 0.9; 
+        }
+
+
+
+        svg {
+            font-family: Palatino;
+        
+        }
+
+        div {
+            margin:30px;
+            font-family: arial;
+            background-color: #edf5f7;
+            border: 2px dotted #000 ;
+            border-radius: 5px;
+            padding: 20px;    
+        }
+
+        
+        
+    h1 {
+        color: #0b4370;
+
+    }
+
+    h2 {
+        color: #0b4370;
+
+    }
+    
+        /* Additional styles for home screen */
+        .home-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .home-screen h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .home-screen p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            animation: spin 3s infinite linear;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="home-screen">
+        <h1>Daniel's Cool Titanic Project!</h1>
+        <p>Enjoy the amazing content and animations.</p>
+        <img class="logo" src="pokeball.png" alt="Logo" width="100px" height="100px">
+    </div>
+    
+    <div>
+        <h1>Women and Children first?</h1>
+
+        <p>Here are the results of my Titanic analysis.</p>
+
+        <img src='titanic.jpg' width='700px'>
+        <br>
+
+        
+        <h2>Study Conclusion</h2>
+        <svg width='800' height='500'>
+            <rect class='women'></rect>
+            <text x='18' y='55' font-size='20' fill='white'>Women</text>
+            <text x='650' y='55' font-size='25' fill='#edf5f7'>74%</text>
+            
+            <rect y= '110' class='men'></rect>
+            <text x='28' y='165' font-size='20' fill='white'>Men</text>
+            <text x='200' y='165' font-size='25' fill='#edf5f7'>19%</text>
+
+            <rect y= '230' class='child'></rect>
+            <text x='12' y='285' font-size='20' fill='white'>Children</text>
+            <text x='550' y='285' font-size='25' fill='#edf5f7'>59%</text>
+
+        </svg>
+
+
+
+</html> <!-- end of html -->
